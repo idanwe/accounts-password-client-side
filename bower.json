@@ -1,0 +1,37 @@
+{
+  "name": "accounts-password-client-side",
+  "version": "0.1.0",
+  "main": [
+    "packages/callback-hook.js",
+    "packages/localstorage.js",
+    "packages/accounts-base.js",
+    "packages/service-configuration.js",
+    "packages/sha.js",
+    "packages/srp.js",
+    "packages/accounts-password.js"
+  ],
+  "dependencies": {
+    "meteor-client-side": "~0.1.0"
+  },
+  "homepage": "https://github.com/idanwe/accounts-password-client-side",
+  "authors": [
+    "Idan Wender <idanwe2@gmail.com>"
+  ],
+  "description": "Use Meteor's accounts-password package with[meteor-client-side",
+  "keywords": [
+    "meteor",
+    "accounts",
+    "password",
+    "ddp",
+    "client",
+    "side"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
