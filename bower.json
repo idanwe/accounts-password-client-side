@@ -11,7 +11,7 @@
     "packages/accounts-password.js"
   ],
   "dependencies": {
-    "meteor-client-side": "~0.1.0"
+    "meteor-client-side": "~0.2.0"
   },
   "homepage": "https://github.com/idanwe/accounts-password-client-side",
   "authors": [
