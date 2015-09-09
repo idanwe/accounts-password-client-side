@@ -4,9 +4,6 @@
 NAME=accounts-password-client-side # Set the bundle file name
 DIST_FOLDER=dist # The folder that the bundled files will be copy in to
 
-# Add packages
-PACKAGE_DIRS=$PARENT meteor add accounts-password
-
 # run time variables
 PROJECT_ROOT=$(pwd)
 PROJECT_PARENT=$PROJECT_ROOT/..
@@ -22,6 +19,11 @@ mkdir -p $DIST_PATH
 rm -rf $BUNDLER_PATH
 meteor create $BUNDLER_PATH
 cd $BUNDLER_PATH
+
+
+# Add packages
+PACKAGE_DIRS=$PARENT meteor add accounts-password
+
 
 # Build the packages
 PACKAGE_DIRS=$PROJECT_PARENT meteor build --debug .
