@@ -1,15 +1,7 @@
 {
   "name": "accounts-password-client-side",
   "version": "0.2.0",
-  "main": [
-    "packages/callback-hook.js",
-    "packages/localstorage.js",
-    "packages/accounts-base.js",
-    "packages/service-configuration.js",
-    "packages/sha.js",
-    "packages/srp.js",
-    "packages/accounts-password.js"
-  ],
+  "main": "./dist/accounts-password-client-side.bundle.min.js",
   "dependencies": {
     "meteor-client-side": "~0.2.0"
   },
