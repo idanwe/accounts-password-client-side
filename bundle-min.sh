@@ -2,6 +2,7 @@
 
 # configs variables
 NAME=accounts-password-client-side # Set the bundle file name
+PACKAGE=accounts-password
 DIST_FOLDER=dist # The folder that the bundled files will be copy in to
 
 # run time variables
@@ -22,7 +23,7 @@ cd $BUNDLER_PATH
 
 
 # Add packages
-PACKAGE_DIRS=$PARENT meteor add accounts-password
+PACKAGE_DIRS=$PARENT meteor add $PACKAGE
 
 
 # Build the packages
@@ -37,10 +38,6 @@ rm -rf $OUTPUT_PATH
 mkdir $OUTPUT_PATH
 
 # Concat files
-cat "$PACKAGES_PATH/callback-hook.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/localstorage.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/accounts-base.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/service-configuration.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/sha.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/srp.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/accounts-password.js" >> $OUTPUT_PATH/$NAME.bundle.js
