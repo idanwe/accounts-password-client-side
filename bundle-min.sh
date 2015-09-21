@@ -23,6 +23,7 @@ cd $BUNDLER_PATH
 
 
 # Add packages
+echo > .meteor/packages # Delete all default packages
 PACKAGE_DIRS=$PARENT meteor add $PACKAGE
 
 
@@ -41,6 +42,7 @@ mkdir $OUTPUT_PATH
 cat "$PACKAGES_PATH/sha.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/srp.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/accounts-password.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/global-imports.js" >> $OUTPUT_PATH/$NAME.bundle.js
 
 # Minify
 npm install uglify-js
