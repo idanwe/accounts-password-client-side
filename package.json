@@ -20,7 +20,7 @@
   ],
   "author": "PhamTrong <phamtrong204@gmail.com>",
   "license": "MIT",
-  "dependencies" :{
+  "dependencies": {
     "ows-meteor-client-side": "^1.0.0",
     "accounts-base-client-side": "^0.1.1"
   }
