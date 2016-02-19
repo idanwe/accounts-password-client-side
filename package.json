@@ -1,8 +1,8 @@
 {
-  "name": "accounts-base-client-side",
-  "version": "0.3.1",
-  "description": "custom collections like  meteor package for other client ",
-  "main": "dist/accounts-base-client-side.bundle.min.js",
+  "name": "accounts-password-client-side",
+  "version": "0.3.2",
+  "description": "Use Meteor's accounts-password package with[meteor-client-side",
+  "main": "dist/accounts-password-client-side.bundle.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,6 @@
   "license": "MIT",
   "dependencies" :{
     "ows-meteor-client-side": "^1.0.0",
-    "github:phamtrong204/accounts-base-client-side": "^0.1.1"
+    "accounts-base-client-side": "^0.1.1"
   }
 }
