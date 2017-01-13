@@ -3,6 +3,7 @@
   "version": "1.3.3",
   "description": "Use Meteor's accounts-password package with meteor-client-side",
   "main": "dist/accounts-password-client-side.bundle.js",
+  "main": "dist/accounts-password-client-side.bundle.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
